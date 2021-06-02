@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:udc_eats/screens/coffee_shops.dart';
 import 'package:udc_eats/screens/orders.dart';
+import 'package:udc_eats/screens/profile.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -9,13 +10,7 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   int _selectedIndex = 0;
-  List<Widget> _widgetOptions = <Widget>[
-    Orders(),
-    CoffeeShop(),
-    Text(
-      'Index 2: School',
-    ),
-  ];
+  List<Widget> _widgetOptions = <Widget>[Orders(), CoffeeShop(), Profile()];
 
   void _onItemTapped(int index) {
     setState(() {
